@@ -72,7 +72,7 @@
 #endif
 
 #if STM32_NADC < 1
-#  undef CONFIG_STM32_ADC3
+#  undef CONFIG_STM32_ADC1
 #endif
 
 #if defined(CONFIG_STM32_ADC1) || defined(CONFIG_STM32_ADC2) || defined(CONFIG_STM32_ADC3)
@@ -113,7 +113,6 @@ static const uint32_t g_pinlist[ADC3_NCHANNELS]  = {GPIO_ADC3_IN10, GPIO_ADC3_IN
  *   examples/adc.
  *
  ************************************************************************************/
-
 int adc_devinit(void)
 {
 #ifdef CONFIG_STM32_ADC3

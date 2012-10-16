@@ -185,12 +185,12 @@ int test_float(int argc, char *argv[])
 
 	printf("\n--- DOUBLE PRECISION TESTS ---\n");
 
-	double d1 = 1.0111;
-	double d2 = 2.0;
+	double d1 = 1.0111D;
+	double d2 = 2.0D;
 
 	double d1d2 = d1 * d2;
 
-	if (d1d2 == 2.022200000000000219557705349871) {
+	if (d1d2 == 2.022200000000000219557705349871D) {
 		printf("\t success: 1.0111 * 2.0 == 2.0222\n");
 
 	} else {
@@ -214,9 +214,9 @@ int test_float(int argc, char *argv[])
 	fflush(stdout);
 
 
-	double sin_zero = sin(0.0);
-	double sin_one = sin(1.0);
-	double atan2_ones = atan2(1.0, 1.0);
+	double sin_zero = sin(0.0F);
+	double sin_one = sin(1.0F);
+	double atan2_ones = atan2(1.0F, 1.0F);
 
 	if (sin_zero == 0.0) {
 		printf("\t success: sin(0.0) == 0.0\n");
